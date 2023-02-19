@@ -41,11 +41,11 @@ def operation(refer,sample):
                     count=count+1
                     result.append(sample_arr[i][1])
 
+    result= set(result)
     print(count)
     time.sleep(5)
     print("\nNumber of unique markers disregarding individuals are as follows")
     time.sleep(3)
-    result=set(result)
     for i in result:
            print(i)
 
